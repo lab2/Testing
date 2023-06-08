@@ -1,7 +1,5 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
-
-
 public class Junit4AssertionTest {
     @Test
     public void testAssertOK(){
@@ -35,7 +33,7 @@ public class Junit4AssertionTest {
         int variable1=1;
         int	variable2=2;
         int[] airethematicArrary1 = { 1, 2, 3 };
-        int[] airethematicArrary2 = { 3, 2, 1 };
+        int[] airethematicArrary2 = { 3, 2, 0 };
 
         //Assert statements
         assertEquals(string1,string2);
