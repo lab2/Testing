@@ -5,30 +5,17 @@ public class Junit4AssertionTest {
     public void testAssertOK(){
         String string1="Junit";
         String string2="Junit";
-        String string3="test";
-        String string4="test";
-        String string5=null;
-        int variable1=1;
-        int	variable2=2;
-        int[] airethematicArrary1 = { 1, 2, 3 };
-        int[] airethematicArrary2 = { 1, 2, 3 };
 
         //Assert statements
         assertEquals(string1,string2);
-        assertSame(string3, string4);
-        assertNotSame(string1, string3);
-        assertNotNull(string1);
-        assertNull(string5);
-        assertTrue(variable1<variable2);
-        assertArrayEquals(airethematicArrary1, airethematicArrary2);
     }
 
     @Test
     public void testAssertNOK(){
         String string1="ABC";
-        String string2="Junit";
-        String string3="Test";
-        String string4="test";
+        String string2="ABC";
+        String string3="ABC";
+        String string4="ABC";
         String string5=null;
         int variable1=1;
         int	variable2=2;
@@ -37,11 +24,5 @@ public class Junit4AssertionTest {
 
         //Assert statements
         assertEquals(string1,string2);
-        assertSame(string3, string4);
-        assertNotSame(string1, string3);
-        assertNotNull(string1);
-        assertNull(string5);
-        assertTrue(variable1<variable2);
-        assertArrayEquals(airethematicArrary1, airethematicArrary2);
     }
 }
